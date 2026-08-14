@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { newsData } from '../data/newsData';
 import grpImage1 from '../assets/grp-image1.jpg';
+import labLogo from '../assets/lab-logo.png';
 
 const homeImages = [
     {
@@ -28,11 +29,11 @@ const Home = () => {
     return (
         <div>
             {/* Hero Section */}
-            <section className="bg-slate-900 py-16 md:py-24 shadow-xl">
+            <section className="bg-slate-900 py-12 md:py-20 shadow-xl">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col md:flex-row items-center gap-12 md:gap-24">
-                        {/* Text Content - 66% width */}
-                        <div className="w-full md:w-2/3 space-y-5 text-left">
+                    <div className="flex flex-col lg:flex-row items-center lg:items-stretch gap-10 lg:gap-14">
+                        {/* Text Content - Bio */}
+                        <div className="w-full lg:w-3/5 space-y-5 text-left flex flex-col justify-center">
                             <h1 className="text-2xl md:text-3xl font-extrabold text-teal-400 tracking-tight leading-tight">
                                 Understanding, Predicting and Engineering Molecular Function
                             </h1>
@@ -52,36 +53,48 @@ const Home = () => {
                             </div>
                         </div>
 
-                        {/* Image Carousel - 35% width */}
-                        <div className="w-full md:w-1/3 relative h-72 md:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-700 self-start">
-                            {homeImages.map((image, index) => (
-                                <div
-                                    key={index}
-                                    className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'
-                                        }`}
-                                >
-                                    <img
-                                        src={image.src}
-                                        alt={image.alt}
-                                        className="w-full h-full object-cover"
-                                    />
-                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-4 pt-12 text-center text-sm font-medium">
-                                        {image.alt}
-                                    </div>
-                                </div>
-                            ))}
+                        {/* Right Side: Circular Logo and Carousel */}
+                        <div className="w-full lg:w-2/5 flex flex-col items-center justify-between gap-6 py-2">
+                            {/* Circular Lab Logo */}
+                            <div className="w-60 h-60 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full overflow-hidden shadow-2xl border-4 border-slate-700 bg-white p-3 flex items-center justify-center flex-shrink-0 hover:scale-105 transition-transform duration-500">
+                                <img
+                                    src={labLogo}
+                                    alt="Computational Biocatalysis Lab Logo"
+                                    className="w-full h-full object-contain rounded-full"
+                                />
+                            </div>
 
-                            {/* Carousel Indicators */}
-                            <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-2 z-10">
-                                {homeImages.map((_, index) => (
-                                    <button
+                            {/* Image Carousel */}
+                            <div className="w-full relative h-60 sm:h-64 md:h-72 rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-700">
+                                {homeImages.map((image, index) => (
+                                    <div
                                         key={index}
-                                        onClick={() => setCurrentImageIndex(index)}
-                                        className={`h-1.5 rounded-full transition-all duration-300 ${index === currentImageIndex ? 'bg-white w-6' : 'bg-white/40 w-2'
+                                        className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'
                                             }`}
-                                        aria-label={`Go to slide ${index + 1}`}
-                                    />
+                                    >
+                                        <img
+                                            src={image.src}
+                                            alt={image.alt}
+                                            className="w-full h-full object-cover"
+                                        />
+                                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-3 pt-8 text-center text-sm font-medium">
+                                            {image.alt}
+                                        </div>
+                                    </div>
                                 ))}
+
+                                {/* Carousel Indicators */}
+                                <div className="absolute bottom-2.5 left-0 right-0 flex justify-center gap-2 z-10">
+                                    {homeImages.map((_, index) => (
+                                        <button
+                                            key={index}
+                                            onClick={() => setCurrentImageIndex(index)}
+                                            className={`h-1.5 rounded-full transition-all duration-300 ${index === currentImageIndex ? 'bg-white w-6' : 'bg-white/40 w-2'
+                                                }`}
+                                            aria-label={`Go to slide ${index + 1}`}
+                                        />
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>

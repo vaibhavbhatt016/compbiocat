@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Atom } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import labLogo from '../../assets/lab-logo.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +13,7 @@ const Navbar = () => {
         { name: 'Team', path: '/team' },
         { name: 'News', path: '/news' },
         { name: 'Publications', path: '/publications' },
+        { name: 'Gallery', path: '/gallery' },
         { name: 'Contact', path: '/contact' },
     ];
 
@@ -22,9 +24,15 @@ const Navbar = () => {
             <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
-                    <Link to="/" className="flex items-center space-x-2">
-                        <Atom className="h-8 w-8 text-science-teal" />
-                        <span className="font-bold text-xl tracking-tight">Computational Biocatalysis Lab</span>
+                    <Link to="/" className="flex items-center space-x-3 group">
+                        <img
+                            src={labLogo}
+                            alt="Computational Biocatalysis Lab Logo"
+                            className="h-10 w-10 rounded-full object-cover shadow-sm border border-slate-200 group-hover:scale-105 transition-transform"
+                        />
+                        <span className="font-bold text-xl tracking-tight text-science-blue group-hover:text-teal-600 transition-colors">
+                            Computational Biocatalysis Lab
+                        </span>
                     </Link>
 
                     {/* Desktop Menu */}
