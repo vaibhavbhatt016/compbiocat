@@ -3,15 +3,13 @@ import { Link } from 'react-router-dom';
 import { newsData } from '../data/newsData';
 import grpImage1 from '../assets/grp-image1.jpg';
 import labLogo from '../assets/lab-logo.png';
+import reactionVideo from '../assets/reaction_10s.mp4';
 
-const homeImages = [
+const homeMedia = [
     {
-        src: "/md-water.gif",
-        alt: "Molecular Dynamics of Water"
-    },
-    {
-        src: "/calmodulin.gif",
-        alt: "Calmodulin Conformation Change"
+        type: "video",
+        src: reactionVideo,
+        alt: "Enzymatic Reaction Dynamics Simulation"
     }
 ];
 
@@ -19,9 +17,10 @@ const Home = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
+        if (homeMedia.length <= 1) return;
         const interval = setInterval(() => {
-            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % homeImages.length);
-        }, 3690);
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % homeMedia.length);
+        }, 6000);
 
         return () => clearInterval(interval);
     }, []);
@@ -64,37 +63,50 @@ const Home = () => {
                                 />
                             </div>
 
-                            {/* Image Carousel */}
-                            <div className="w-full relative h-60 sm:h-64 md:h-72 rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-700">
-                                {homeImages.map((image, index) => (
+                            {/* Video / Media Carousel */}
+                            <div className="w-full relative h-60 sm:h-64 md:h-72 rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-700 bg-slate-950 flex items-center justify-center">
+                                {homeMedia.map((item, index) => (
                                     <div
                                         key={index}
-                                        className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+                                        className={`absolute inset-0 transition-opacity duration-1000 ease-in-out flex items-center justify-center ${index === currentImageIndex ? 'opacity-100' : 'opacity-0 pointer-events-none'
                                             }`}
                                     >
-                                        <img
-                                            src={image.src}
-                                            alt={image.alt}
-                                            className="w-full h-full object-cover"
-                                        />
-                                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-3 pt-8 text-center text-sm font-medium">
-                                            {image.alt}
+                                        {item.type === 'video' ? (
+                                            <video
+                                                src={item.src}
+                                                autoPlay
+                                                loop
+                                                muted
+                                                playsInline
+                                                className="w-full h-full object-cover"
+                                            />
+                                        ) : (
+                                            <img
+                                                src={item.src}
+                                                alt={item.alt}
+                                                className="w-full h-full object-cover"
+                                            />
+                                        )}
+                                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white p-3 pt-8 text-center text-sm font-medium">
+                                            {item.alt}
                                         </div>
                                     </div>
                                 ))}
 
                                 {/* Carousel Indicators */}
-                                <div className="absolute bottom-2.5 left-0 right-0 flex justify-center gap-2 z-10">
-                                    {homeImages.map((_, index) => (
-                                        <button
-                                            key={index}
-                                            onClick={() => setCurrentImageIndex(index)}
-                                            className={`h-1.5 rounded-full transition-all duration-300 ${index === currentImageIndex ? 'bg-white w-6' : 'bg-white/40 w-2'
-                                                }`}
-                                            aria-label={`Go to slide ${index + 1}`}
-                                        />
-                                    ))}
-                                </div>
+                                {homeMedia.length > 1 && (
+                                    <div className="absolute bottom-2.5 left-0 right-0 flex justify-center gap-2 z-10">
+                                        {homeMedia.map((_, index) => (
+                                            <button
+                                                key={index}
+                                                onClick={() => setCurrentImageIndex(index)}
+                                                className={`h-1.5 rounded-full transition-all duration-300 ${index === currentImageIndex ? 'bg-white w-6' : 'bg-white/40 w-2'
+                                                    }`}
+                                                aria-label={`Go to slide ${index + 1}`}
+                                            />
+                                        ))}
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </div>

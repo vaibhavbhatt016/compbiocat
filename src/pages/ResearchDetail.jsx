@@ -144,7 +144,19 @@ const ResearchDetail = () => {
 
             <div className="bg-white rounded-lg shadow-sm border border-slate-100 overflow-hidden p-8">
                 {/* Project Banner Image */}
-                {project.image && (
+                {project.images && project.images.length > 1 ? (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full bg-white rounded-lg mb-8 p-4 shadow-sm border border-slate-100">
+                        {project.images.map((img, idx) => (
+                            <div key={idx} className="h-64 sm:h-80 w-full flex items-center justify-center overflow-hidden">
+                                <img
+                                    src={img}
+                                    alt={`${project.title} ${idx + 1}`}
+                                    className="w-full h-full object-contain bg-white"
+                                />
+                            </div>
+                        ))}
+                    </div>
+                ) : project.image && (
                     <div className="h-64 sm:h-80 md:h-96 w-full bg-white rounded-lg mb-8 overflow-hidden relative shadow-sm border border-slate-100 flex items-center justify-center p-4">
                         <img
                             src={project.image}

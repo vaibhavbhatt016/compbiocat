@@ -22,7 +22,21 @@ const getMemberImage = (firstName) => {
 const SOCIAL_LINKS = {
     x: "https://x.com/kshatresh?lang=en",
     linkedin: "https://www.linkedin.com/in/dr-kshatresh-dutta-dubey-42240a17/",
+    scholar: "https://scholar.google.com/citations?user=K7T8ggkAAAAJ&hl=en",
 };
+
+const ScholarIcon = ({ size = 16, className = "" }) => (
+    <svg
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        className={className}
+        aria-label="Google Scholar"
+    >
+        <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5 12 0z" />
+    </svg>
+);
 
 const XIcon = ({ size = 16, className = "" }) => (
     <svg
@@ -109,7 +123,7 @@ const Team = () => {
                         <h3 className="text-xl font-bold text-science-blue">Dr. Kshatresh Dutta Dubey</h3>
                         <p className="text-science-teal font-medium mb-4">Assistant Professor</p>
                         <p className="text-slate-600 mb-4">
-                            Dr. Dubey leads the computational lab, focusing on multiscale modeling of complex biological systems.
+                            Dr. Dubey leads the Computational Biocatalysis Lab, focusing on multiscale modeling of complex biological systems.
                         </p>
                         <div className="flex flex-wrap items-center text-slate-500 gap-4 mt-2">
                             <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
@@ -144,6 +158,15 @@ const Team = () => {
                                     title="LinkedIn"
                                 >
                                     <Linkedin size={14} />
+                                </a>
+                                <a
+                                    href={SOCIAL_LINKS.scholar}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="p-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 hover:text-blue-700 transition-colors"
+                                    title="Google Scholar"
+                                >
+                                    <ScholarIcon size={14} />
                                 </a>
                             </div>
                         </div>

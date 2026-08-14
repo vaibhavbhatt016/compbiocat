@@ -1,5 +1,6 @@
 import electricFieldImg from '../assets/electric_field.png';
 import enzymaticCatalysisImg from '../assets/enzymatic_catalysis.png';
+import enzCat1Img from '../assets/enz_cat1.png';
 import strBioImg from '../assets/str_bio1.png';
 
 export const projects = [
@@ -68,7 +69,8 @@ We use computational principles of protein structure, energetics, and catalysis 
         id: "enzymatic-catalysis",
         title: "Enzymatic Catalysis",
         description: "We investigate how enzymes accelerate chemical reactions at the molecular and electronic levels through QM/MM calculations and quantum chemistry.",
-        image: enzymaticCatalysisImg,
+        image: enzCat1Img,
+        images: [enzCat1Img, enzymaticCatalysisImg],
         fullDescription: `
 # Enzymatic Catalysis
 

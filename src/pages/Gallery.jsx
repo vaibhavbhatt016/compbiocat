@@ -8,6 +8,9 @@ import groupPhoto3 from '../assets/group_photo3.jpg.png';
 import groupPhoto4 from '../assets/group_photo4.jpeg';
 import b1Img from '../assets/b1.jpg';
 import b2Img from '../assets/b2.jpg';
+import b3Img from '../assets/b3.jpg';
+import b4Img from '../assets/b4.jpg';
+import b5Img from '../assets/b5.jpg';
 import a2Img from '../assets/a2.jpeg';
 import a3Img from '../assets/a3.jpeg';
 import a7Img from '../assets/a7.jpeg';
@@ -15,18 +18,21 @@ import a8Img from '../assets/a8.jpeg';
 import a9Img from '../assets/a9.jpeg';
 
 const galleryImages = [
-    { id: 1, src: grpImage1, title: 'Computational Biocatalysis Group', category: 'Group Photos', description: 'Group photo of Computational Biocatalysis Lab members.' },
-    { id: 2, src: groupPhoto1, title: 'Lab Members Gathering', category: 'Lab Moments', description: 'Group members together celebrating research achievements.' },
-    { id: 3, src: groupPhoto2, title: 'Group Discussion & Research', category: 'Lab Moments', description: 'Collaborative computational chemistry and team interactions.' },
-    { id: 4, src: groupPhoto3, title: 'Lab Celebrations & Milestones', category: 'Celebrations', description: 'Celebrating milestone achievements and lab events.' },
-    { id: 5, src: groupPhoto4, title: 'Annual Group Photo', category: 'Group Photos', description: 'Annual gathering of the research team at SNIoE.' },
-    { id: 6, src: b1Img, title: 'Lab Life & Research Gatherings', category: 'Lab Moments', description: 'Moments of research and academic interaction.' },
-    { id: 7, src: b2Img, title: 'Academic Symposia & Discussions', category: 'Events', description: 'Scientific presentations and symposium discussions.' },
-    { id: 8, src: a2Img, title: 'Conferences & Scientific Discussions', category: 'Events', description: 'Engaging in academic discussions and scientific exchanges.' },
-    { id: 9, src: a3Img, title: 'Research Presentations & Seminars', category: 'Events', description: 'Presenting research findings and participating in symposia.' },
-    { id: 10, src: a7Img, title: 'Lab Outings & Team Building', category: 'Lab Life', description: 'Team building and memorable outings with lab members.' },
-    { id: 11, src: a8Img, title: 'Collaborative Chemistry Sessions', category: 'Lab Life', description: 'Moments of scientific camaraderie and teamwork.' },
-    { id: 12, src: a9Img, title: 'Moments at Shiv Nadar IoE', category: 'Campus & Lab', description: 'Life at the Department of Chemistry, Shiv Nadar Institution of Eminence.' },
+    { id: 1, src: grpImage1, title: 'Computational Biocatalysis Group', category: 'Group Photos' },
+    { id: 2, src: groupPhoto1, title: 'Lab Members Gathering', category: 'Lab Moments' },
+    { id: 3, src: groupPhoto2, title: 'Group Discussion & Research', category: 'Lab Moments' },
+    { id: 4, src: groupPhoto3, title: 'Lab Celebrations & Milestones', category: 'Celebrations' },
+    { id: 5, src: groupPhoto4, title: 'Annual Group Photo', category: 'Group Photos' },
+    { id: 6, src: b1Img, title: 'Lab Life & Research Gatherings', category: 'Lab Moments' },
+    { id: 7, src: b2Img, title: 'Academic Symposia & Discussions', category: 'Events' },
+    { id: 8, src: b3Img, title: 'Group Discussion & Seminars', category: 'Lab Moments' },
+    { id: 9, src: b4Img, title: 'Scientific Collaboration', category: 'Events' },
+    { id: 10, src: b5Img, title: 'Lab Team Gatherings', category: 'Lab Life' },
+    { id: 11, src: a2Img, title: 'Conferences & Scientific Discussions', category: 'Events' },
+    { id: 12, src: a3Img, title: 'Research Presentations & Seminars', category: 'Events' },
+    { id: 13, src: a7Img, title: 'Lab Outings & Team Building', category: 'Lab Life' },
+    { id: 14, src: a8Img, title: 'Collaborative Chemistry Sessions', category: 'Lab Life' },
+    { id: 15, src: a9Img, title: 'Moments at Shiv Nadar IoE', category: 'Campus & Lab' },
 ];
 
 const Gallery = () => {
@@ -93,9 +99,9 @@ const Gallery = () => {
                                     alt={image.title}
                                     className="relative z-10 w-full h-full object-contain p-2 sm:p-4"
                                 />
-                                
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 z-20 pointer-events-none" />
-                                
+
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20 z-20 pointer-events-none" />
+
                                 <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 text-white z-30 pointer-events-auto">
                                     <span className="inline-block bg-teal-600/90 text-white text-xs font-semibold px-2.5 py-1 rounded-full mb-2 uppercase tracking-wide">
                                         {image.category}
@@ -103,9 +109,6 @@ const Gallery = () => {
                                     <h2 className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight">
                                         {image.title}
                                     </h2>
-                                    <p className="text-slate-200 text-xs sm:text-sm mt-1 max-w-2xl hidden sm:block">
-                                        {image.description}
-                                    </p>
                                 </div>
                             </div>
                         ))}
@@ -207,9 +210,6 @@ const Gallery = () => {
                                             {image.title}
                                         </h3>
                                     </div>
-                                    <p className="text-xs text-slate-500 mt-2 line-clamp-2">
-                                        {image.description}
-                                    </p>
                                 </div>
                             </div>
                         ))}
@@ -241,7 +241,6 @@ const Gallery = () => {
                         />
                         <div className="mt-4 text-center text-white">
                             <h3 className="text-xl font-bold">{lightboxImage.title}</h3>
-                            <p className="text-slate-300 text-sm mt-1">{lightboxImage.description}</p>
                         </div>
                     </div>
                 </div>

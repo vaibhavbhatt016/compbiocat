@@ -28,7 +28,18 @@ const Research = () => {
                         className="group block bg-white rounded-lg shadow-sm border border-slate-100 overflow-hidden hover:shadow-md transition-all cursor-pointer"
                     >
                         <div className="h-52 bg-white overflow-hidden relative flex items-center justify-center border-b border-slate-100">
-                            {project.image ? (
+                            {project.images && project.images.length > 1 ? (
+                                <div className="flex h-full w-full items-center justify-center gap-2 p-2 bg-white">
+                                    {project.images.map((img, idx) => (
+                                        <img
+                                            key={idx}
+                                            src={img}
+                                            alt={`${project.title} ${idx + 1}`}
+                                            className="w-1/2 h-full object-contain bg-white group-hover:scale-105 transition-transform duration-500"
+                                        />
+                                    ))}
+                                </div>
+                            ) : project.image ? (
                                 <img
                                     src={project.image}
                                     alt={project.title}
