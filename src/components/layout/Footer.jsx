@@ -39,7 +39,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="mt-8 pt-8 border-t border-slate-800 text-center text-sm text-slate-500">
-                    © {new Date().getFullYear()} Computational Biocatalysis Lab. All rights reserved.
+                    © {new Date().getFullYear()} Maintained by Vaibhav Bhatt. All rights reserved.
                 </div>
             </div>
         </footer >
