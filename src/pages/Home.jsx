@@ -9,10 +9,6 @@ const homeImages = [
         alt: "Molecular Dynamics of Water"
     },
     {
-        src: "/kinesin.gif",
-        alt: "Kinesin Protein Walking on Microtubule"
-    },
-    {
         src: "/calmodulin.gif",
         alt: "Calmodulin Conformation Change"
     }
@@ -112,7 +108,7 @@ const Home = () => {
                         </Link>
                     </div>
                     <div className="space-y-4">
-                        {newsData.slice(0, 3).map((item) => (
+                        {newsData.slice(0, 4).map((item) => (
                             <div key={item.id} className="p-4 border-l-4 border-slate-200 hover:border-teal-500 transition-colors">
                                 <div className="text-xs text-slate-500 mb-1">{item.date}</div>
                                 <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
