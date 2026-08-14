@@ -32,15 +32,28 @@ const Home = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col md:flex-row items-center gap-12 md:gap-24">
                         {/* Text Content - 66% width */}
-                        <div className="w-full md:w-2/3 space-y-4">
-                            <p className="text-xl md:text-2xl font-bold text-slate-100 leading-relaxed text-left">
-                                Our lab focuses on using advanced molecular dynamics simulations and hybrid QM/MM methods to understand complex molecular systems at the atomic scale.
-                                We investigate reaction mechanisms, protein dynamics, and material properties to solve fundamental problems in chemistry and biology.
-                            </p>
+                        <div className="w-full md:w-2/3 space-y-5 text-left">
+                            <h1 className="text-2xl md:text-3xl font-extrabold text-teal-400 tracking-tight leading-tight">
+                                Understanding, Predicting and Engineering Molecular Function
+                            </h1>
+                            <div className="space-y-4 text-slate-200 text-sm md:text-base leading-relaxed">
+                                <p>
+                                    Our laboratory investigates the molecular principles that govern protein structure, dynamics, electrostatics, and enzymatic catalysis. We combine computational structural biology, molecular simulations, quantum chemistry, and multiscale modelling to understand biological systems from the atomic to the electronic level.
+                                </p>
+                                <p>
+                                    A central focus of our research is to uncover how the structure and dynamic behaviour of proteins shape their chemical reactivity and biological function. We study protein–ligand and protein–nucleic acid interactions, conformational dynamics, active-site architecture, mutation-induced changes, and long-range communication within biomolecules. Through the analysis of molecular and electric fields, we further investigate how the protein environment modulates molecular properties and guides chemical reactions.
+                                </p>
+                                <p>
+                                    Our research extends from understanding naturally occurring enzymes to designing and engineering new catalytic functions. Using computationally guided approaches, we explore active-site redesign, substrate specificity, enzyme stability, and the molecular determinants of catalytic efficiency. QM/MM and quantum-chemical methods allow us to investigate reaction mechanisms, intermediates, transition states, proton and electron transfer, and complex redox chemistry at the heart of enzymatic catalysis.
+                                </p>
+                                <p>
+                                    By integrating structure, dynamics, electrostatics, and electronic structure, our laboratory seeks to move beyond describing biological systems toward predicting and ultimately controlling molecular function. Our overarching goal is to develop a mechanistic understanding of enzymes that can guide the rational design of new and improved biological catalysts.
+                                </p>
+                            </div>
                         </div>
 
                         {/* Image Carousel - 35% width */}
-                        <div className="w-full md:w-1/3 relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-700">
+                        <div className="w-full md:w-1/3 relative h-72 md:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-700 self-start">
                             {homeImages.map((image, index) => (
                                 <div
                                     key={index}
