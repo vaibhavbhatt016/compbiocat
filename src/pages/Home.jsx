@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { newsData } from '../data/newsData';
-import grpImage1 from '../assets/grp-image1.jpg';
+import grpPhotoUpdated from '../assets/grp_photo_updated.jpg';
 import labLogo from '../assets/lab-logo.png';
 import reactionVideo from '../assets/reaction_10s.mp4';
 
@@ -122,7 +122,7 @@ const Home = () => {
                     </h2>
                     <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-md bg-slate-100">
                         <img
-                            src={grpImage1}
+                            src={grpPhotoUpdated}
                             alt="Computational Biocatalysis Group"
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                         />
