@@ -7,8 +7,8 @@ export const newsData = [
     date: '2026',
     category: 'Awards',
     featured: true,
-    summary: 'Dr. Dubey publishes his 100th research article—an invited contribution upon being awarded the 2026 ACS Rising Star in Biological, Medicinal and Pharmaceutical award.',
-    content: 'Dr. Dubey publishes his 100th research article. The 100th article is the invited article due to him being awarded the 2026 ACS Rising Star in Biological, Medicinal and Pharmaceutical award. He was also awarded the ACS Rising Star in Organic and Inorganic Chemistry in 2025.',
+    summary: 'Celebrating a milestone: Dr. Kshatresh Dutta Dubey publishes his 100th research article—an invited contribution honoring his selection as the 2026 ACS Rising Star in Biological, Medicinal and Pharmaceutical Chemistry.',
+    content: 'We are proud to celebrate a landmark milestone in our laboratory: Dr. Kshatresh Dutta Dubey has published his 100th research article! This invited contribution celebrates Dr. Dubey being awarded the prestigious 2026 ACS Rising Star in Biological, Medicinal and Pharmaceutical Chemistry, following his earlier recognition as the ACS Rising Star in Organic and Inorganic Chemistry in 2025. This accomplishment highlights the continued excellence and impact of our research in multiscale biocatalysis.',
     tags: ['ACS Award', '100th Paper', 'Rising Star', 'Publication'],
     link: '/publications',
     author: 'Computational Biocatalysis Lab'
@@ -63,12 +63,12 @@ export const newsData = [
   },
   {
     id: 6,
-    title: 'Dr. Surajit Kalita Receives PMECRG in Computational Chemical Biology from ANRF',
+    title: 'Dr. Surajit Kalita Awarded Prestigious ANRF PMECRG in Computational Chemical Biology',
     date: '2026',
     category: 'Awards',
     featured: true,
-    summary: 'Dr. Surajit Kalita, the first Ph.D of Computational Biocatalysis Lab, receives the PMECRG from ANRF propelling his independent career.',
-    content: 'Dr. Surajit Kalita, the first Ph.D of Computational Biocatalysis Lab receives the PMECRG in Computational Chemical Biology from ANRF propelling his career as an independent researcher. Congratulations Dr. Kalita.',
+    summary: 'Heartiest congratulations to lab alumnus Dr. Surajit Kalita, Assistant Professor at Tezpur University, on receiving the Prime Minister Early Career Research Grant (PMECRG) from ANRF.',
+    content: 'The Computational Biocatalysis Lab extends its warmest congratulations to Dr. Surajit Kalita, the lab\'s very first doctoral graduate and currently Assistant Professor at Tezpur University, on being awarded the prestigious Prime Minister Early Career Research Grant (PMECRG) in Computational Chemical Biology by the Anusandhan National Research Foundation (ANRF). This esteemed grant recognizes Dr. Kalita\'s high-impact research potential and provides substantial funding to advance his independent research program in biomolecular simulations. We wish Dr. Kalita continued success in his scientific career!',
     tags: ['ANRF', 'PMECRG', 'Grant', 'Alumni Achievement'],
     link: '/news',
     author: 'Computational Biocatalysis Lab'
