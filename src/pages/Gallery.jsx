@@ -6,6 +6,8 @@ import groupPhoto1 from '../assets/group_photo1.jpg';
 import groupPhoto2 from '../assets/group_photo2.jpg';
 import groupPhoto3 from '../assets/group_photo3.jpg.png';
 import groupPhoto4 from '../assets/group_photo4.jpeg';
+import b1Img from '../assets/b1.jpg';
+import b2Img from '../assets/b2.jpg';
 import a2Img from '../assets/a2.jpeg';
 import a3Img from '../assets/a3.jpeg';
 import a7Img from '../assets/a7.jpeg';
@@ -18,11 +20,13 @@ const galleryImages = [
     { id: 3, src: groupPhoto2, title: 'Group Discussion & Research', category: 'Lab Moments', description: 'Collaborative computational chemistry and team interactions.' },
     { id: 4, src: groupPhoto3, title: 'Lab Celebrations & Milestones', category: 'Celebrations', description: 'Celebrating milestone achievements and lab events.' },
     { id: 5, src: groupPhoto4, title: 'Annual Group Photo', category: 'Group Photos', description: 'Annual gathering of the research team at SNIoE.' },
-    { id: 6, src: a2Img, title: 'Conferences & Scientific Discussions', category: 'Events', description: 'Engaging in academic discussions and scientific exchanges.' },
-    { id: 7, src: a3Img, title: 'Research Presentations & Seminars', category: 'Events', description: 'Presenting research findings and participating in symposia.' },
-    { id: 8, src: a7Img, title: 'Lab Outings & Team Building', category: 'Lab Life', description: 'Team building and memorable outings with lab members.' },
-    { id: 9, src: a8Img, title: 'Collaborative Chemistry Sessions', category: 'Lab Life', description: 'Moments of scientific camaraderie and teamwork.' },
-    { id: 10, src: a9Img, title: 'Moments at Shiv Nadar IoE', category: 'Campus & Lab', description: 'Life at the Department of Chemistry, Shiv Nadar Institution of Eminence.' },
+    { id: 6, src: b1Img, title: 'Lab Life & Research Gatherings', category: 'Lab Moments', description: 'Moments of research and academic interaction.' },
+    { id: 7, src: b2Img, title: 'Academic Symposia & Discussions', category: 'Events', description: 'Scientific presentations and symposium discussions.' },
+    { id: 8, src: a2Img, title: 'Conferences & Scientific Discussions', category: 'Events', description: 'Engaging in academic discussions and scientific exchanges.' },
+    { id: 9, src: a3Img, title: 'Research Presentations & Seminars', category: 'Events', description: 'Presenting research findings and participating in symposia.' },
+    { id: 10, src: a7Img, title: 'Lab Outings & Team Building', category: 'Lab Life', description: 'Team building and memorable outings with lab members.' },
+    { id: 11, src: a8Img, title: 'Collaborative Chemistry Sessions', category: 'Lab Life', description: 'Moments of scientific camaraderie and teamwork.' },
+    { id: 12, src: a9Img, title: 'Moments at Shiv Nadar IoE', category: 'Campus & Lab', description: 'Life at the Department of Chemistry, Shiv Nadar Institution of Eminence.' },
 ];
 
 const Gallery = () => {
@@ -68,27 +72,38 @@ const Gallery = () => {
 
                 {/* Main Slideshow Showcase */}
                 <div className="bg-white rounded-2xl p-4 sm:p-6 md:p-8 shadow-md border border-slate-200/80 mb-12">
-                    <div className="relative w-full aspect-[16/9] md:aspect-[21/9] max-h-[560px] rounded-xl overflow-hidden bg-slate-950 shadow-inner group">
+                    <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] max-h-[600px] rounded-xl overflow-hidden bg-slate-950 shadow-inner group flex items-center justify-center">
                         {galleryImages.map((image, index) => (
                             <div
                                 key={image.id}
-                                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
+                                className={`absolute inset-0 transition-opacity duration-700 ease-in-out flex items-center justify-center ${index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
                                     }`}
                             >
+                                {/* Blurred subtle backdrop for ultra-clean letterbox */}
+                                <img
+                                    src={image.src}
+                                    alt=""
+                                    aria-hidden="true"
+                                    className="absolute inset-0 w-full h-full object-cover blur-2xl opacity-25 scale-110"
+                                />
+
+                                {/* Complete uncropped image */}
                                 <img
                                     src={image.src}
                                     alt={image.title}
-                                    className="w-full h-full object-contain md:object-cover"
+                                    className="relative z-10 w-full h-full object-contain p-2 sm:p-4"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
-                                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white">
+                                
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 z-20 pointer-events-none" />
+                                
+                                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 text-white z-30 pointer-events-auto">
                                     <span className="inline-block bg-teal-600/90 text-white text-xs font-semibold px-2.5 py-1 rounded-full mb-2 uppercase tracking-wide">
                                         {image.category}
                                     </span>
-                                    <h2 className="text-xl md:text-2xl font-bold tracking-tight">
+                                    <h2 className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight">
                                         {image.title}
                                     </h2>
-                                    <p className="text-slate-200 text-sm mt-1 max-w-2xl hidden sm:block">
+                                    <p className="text-slate-200 text-xs sm:text-sm mt-1 max-w-2xl hidden sm:block">
                                         {image.description}
                                     </p>
                                 </div>
@@ -98,31 +113,31 @@ const Gallery = () => {
                         {/* Navigation Arrows */}
                         <button
                             onClick={prevSlide}
-                            className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2.5 rounded-full bg-black/40 hover:bg-black/70 text-white backdrop-blur-sm transition-all hover:scale-110"
+                            className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 z-40 p-2 sm:p-2.5 rounded-full bg-black/50 hover:bg-black/80 text-white backdrop-blur-sm transition-all hover:scale-110"
                             aria-label="Previous Slide"
                         >
-                            <ChevronLeft className="h-6 w-6" />
+                            <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
                         </button>
                         <button
                             onClick={nextSlide}
-                            className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2.5 rounded-full bg-black/40 hover:bg-black/70 text-white backdrop-blur-sm transition-all hover:scale-110"
+                            className="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 z-40 p-2 sm:p-2.5 rounded-full bg-black/50 hover:bg-black/80 text-white backdrop-blur-sm transition-all hover:scale-110"
                             aria-label="Next Slide"
                         >
-                            <ChevronRight className="h-6 w-6" />
+                            <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
                         </button>
 
                         {/* Controls (Play/Pause, Fullscreen) */}
-                        <div className="absolute top-4 right-4 z-20 flex items-center space-x-2">
+                        <div className="absolute top-4 right-4 z-40 flex items-center space-x-2">
                             <button
                                 onClick={() => setIsPlaying(!isPlaying)}
-                                className="p-2 rounded-full bg-black/40 hover:bg-black/70 text-white backdrop-blur-sm transition-colors"
+                                className="p-2 rounded-full bg-black/50 hover:bg-black/80 text-white backdrop-blur-sm transition-colors"
                                 title={isPlaying ? 'Pause Slideshow' : 'Play Slideshow'}
                             >
                                 {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
                             </button>
                             <button
                                 onClick={() => setLightboxImage(galleryImages[currentIndex])}
-                                className="p-2 rounded-full bg-black/40 hover:bg-black/70 text-white backdrop-blur-sm transition-colors"
+                                className="p-2 rounded-full bg-black/50 hover:bg-black/80 text-white backdrop-blur-sm transition-colors"
                                 title="View Fullscreen"
                             >
                                 <Maximize2 className="h-4 w-4" />
@@ -173,7 +188,7 @@ const Gallery = () => {
                                 onClick={() => setLightboxImage(image)}
                                 className="group relative bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200/80 transition-all duration-300 cursor-pointer flex flex-col"
                             >
-                                <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                                <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-900 flex items-center justify-center">
                                     <img
                                         src={image.src}
                                         alt={image.title}

@@ -20,8 +20,8 @@ const getMemberImage = (firstName) => {
 
 // Social media URLs - update hyperlinks when details are provided
 const SOCIAL_LINKS = {
-    x: "#", // Add X (formerly Twitter) link here
-    linkedin: "#", // Add LinkedIn link here
+    x: "https://x.com/kshatresh?lang=en",
+    linkedin: "https://www.linkedin.com/in/dr-kshatresh-dutta-dubey-42240a17/",
 };
 
 const XIcon = ({ size = 16, className = "" }) => (
@@ -38,8 +38,8 @@ const XIcon = ({ size = 16, className = "" }) => (
 );
 
 const teamMembers = [
-    { name: "Vaibhav Bhatt", firstName: "vaibhav", role: "Ph.D. Scholar", email: "vb147@snu.edu.in", x: "#", linkedin: "#" },
-    { name: "Dinesh Singh", firstName: "dinesh", role: "Ph.D. Scholar", email: "ds829@snu.edu.in", x: "#", linkedin: "#" },
+    { name: "Vaibhav Bhatt", firstName: "vaibhav", role: "Ph.D. Scholar", email: "vb147@snu.edu.in", x: "https://x.com/vaibhavbhatt314", linkedin: "https://www.linkedin.com/in/vaibhav-bhatt-70a73936/" },
+    { name: "Dinesh Singh", firstName: "dinesh", role: "Ph.D. Scholar", email: "ds829@snu.edu.in", x: "https://x.com/Dineshsingh6666", linkedin: "https://www.linkedin.com/in/dinesh-singh-661945243/" },
     { name: "Epari Sai Santosh Kumar", firstName: "epari", role: "Ph.D. Scholar", email: "ek923@snu.edu.in", x: "#", linkedin: "#" },
     { name: "Subhasri Dan", firstName: "subhasri", image: subhasriImage, role: "Ph.D. Scholar", email: "sd433@snu.edu.in", x: "#", linkedin: "#" },
     { name: "Insan Khan", firstName: "insan-khan", image: insanKhanImage, role: "Postgraduate Student", email: "ik187@snu.edu.in", x: "#", linkedin: "#" },
