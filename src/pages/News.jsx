@@ -22,7 +22,7 @@ const News = () => {
                             Lab News & Media
                         </h1>
                         <p className="text-lg text-slate-300 leading-relaxed">
-                            Stay up to date with our recent research publications, major grant awards, conference participation, team achievements, and lab events.
+                            Stay up to date with our recent research publications, conference participation, team achievements, and lab events.
                         </p>
                     </div>
                 </div>
