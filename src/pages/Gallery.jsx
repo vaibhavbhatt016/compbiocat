@@ -16,6 +16,7 @@ import a3Img from '../assets/a3.jpeg';
 import a7Img from '../assets/a7.jpeg';
 import a8Img from '../assets/a8.jpeg';
 import a9Img from '../assets/a9.jpeg';
+import labImage1 from '../assets/lab-image1.jpg';
 
 const galleryImages = [
     { id: 1, src: grpImage1 },
@@ -23,16 +24,17 @@ const galleryImages = [
     { id: 3, src: groupPhoto2 },
     { id: 4, src: groupPhoto3 },
     { id: 5, src: groupPhoto4 },
-    { id: 6, src: b1Img },
-    { id: 7, src: b2Img },
-    { id: 8, src: b3Img },
-    { id: 9, src: b4Img },
-    { id: 10, src: b5Img },
-    { id: 11, src: a2Img },
-    { id: 12, src: a3Img },
-    { id: 13, src: a7Img },
-    { id: 14, src: a8Img },
-    { id: 15, src: a9Img },
+    { id: 6, src: labImage1 },
+    { id: 7, src: b1Img },
+    { id: 8, src: b2Img },
+    { id: 9, src: b3Img },
+    { id: 10, src: b4Img },
+    { id: 11, src: b5Img },
+    { id: 12, src: a2Img },
+    { id: 13, src: a3Img },
+    { id: 14, src: a7Img },
+    { id: 15, src: a8Img },
+    { id: 16, src: a9Img },
 ];
 
 const Gallery = () => {
