@@ -18,21 +18,21 @@ import a8Img from '../assets/a8.jpeg';
 import a9Img from '../assets/a9.jpeg';
 
 const galleryImages = [
-    { id: 1, src: grpImage1, title: 'Computational Biocatalysis Group', category: 'Group Photos' },
-    { id: 2, src: groupPhoto1, title: 'Lab Members Gathering', category: 'Lab Moments' },
-    { id: 3, src: groupPhoto2, title: 'Group Discussion & Research', category: 'Lab Moments' },
-    { id: 4, src: groupPhoto3, title: 'Lab Celebrations & Milestones', category: 'Celebrations' },
-    { id: 5, src: groupPhoto4, title: 'Annual Group Photo', category: 'Group Photos' },
-    { id: 6, src: b1Img, title: 'Lab Life & Research Gatherings', category: 'Lab Moments' },
-    { id: 7, src: b2Img, title: 'Academic Symposia & Discussions', category: 'Events' },
-    { id: 8, src: b3Img, title: 'Group Discussion & Seminars', category: 'Lab Moments' },
-    { id: 9, src: b4Img, title: 'Scientific Collaboration', category: 'Events' },
-    { id: 10, src: b5Img, title: 'Lab Team Gatherings', category: 'Lab Life' },
-    { id: 11, src: a2Img, title: 'Conferences & Scientific Discussions', category: 'Events' },
-    { id: 12, src: a3Img, title: 'Research Presentations & Seminars', category: 'Events' },
-    { id: 13, src: a7Img, title: 'Lab Outings & Team Building', category: 'Lab Life' },
-    { id: 14, src: a8Img, title: 'Collaborative Chemistry Sessions', category: 'Lab Life' },
-    { id: 15, src: a9Img, title: 'Moments at Shiv Nadar IoE', category: 'Campus & Lab' },
+    { id: 1, src: grpImage1 },
+    { id: 2, src: groupPhoto1 },
+    { id: 3, src: groupPhoto2 },
+    { id: 4, src: groupPhoto3 },
+    { id: 5, src: groupPhoto4 },
+    { id: 6, src: b1Img },
+    { id: 7, src: b2Img },
+    { id: 8, src: b3Img },
+    { id: 9, src: b4Img },
+    { id: 10, src: b5Img },
+    { id: 11, src: a2Img },
+    { id: 12, src: a3Img },
+    { id: 13, src: a7Img },
+    { id: 14, src: a8Img },
+    { id: 15, src: a9Img },
 ];
 
 const Gallery = () => {
@@ -96,20 +96,9 @@ const Gallery = () => {
                                 {/* Complete uncropped image */}
                                 <img
                                     src={image.src}
-                                    alt={image.title}
+                                    alt={`Lab Gallery Photo ${image.id}`}
                                     className="relative z-10 w-full h-full object-contain p-2 sm:p-4"
                                 />
-
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20 z-20 pointer-events-none" />
-
-                                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 text-white z-30 pointer-events-auto">
-                                    <span className="inline-block bg-teal-600/90 text-white text-xs font-semibold px-2.5 py-1 rounded-full mb-2 uppercase tracking-wide">
-                                        {image.category}
-                                    </span>
-                                    <h2 className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight">
-                                        {image.title}
-                                    </h2>
-                                </div>
                             </div>
                         ))}
 
@@ -164,7 +153,7 @@ const Gallery = () => {
                             >
                                 <img
                                     src={image.src}
-                                    alt={image.title}
+                                    alt={`Thumbnail ${image.id}`}
                                     className="w-full h-full object-cover"
                                 />
                             </button>
@@ -189,27 +178,15 @@ const Gallery = () => {
                             <div
                                 key={image.id}
                                 onClick={() => setLightboxImage(image)}
-                                className="group relative bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200/80 transition-all duration-300 cursor-pointer flex flex-col"
+                                className="group relative bg-slate-900 rounded-xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200/80 transition-all duration-300 cursor-pointer aspect-[4/3] flex items-center justify-center"
                             >
-                                <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-900 flex items-center justify-center">
-                                    <img
-                                        src={image.src}
-                                        alt={image.title}
-                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                    />
-                                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
-                                        <Maximize2 className="h-8 w-8 text-white opacity-0 group-hover:opacity-100 transition-opacity drop-shadow-md" />
-                                    </div>
-                                </div>
-                                <div className="p-4 bg-white flex-1 flex flex-col justify-between">
-                                    <div>
-                                        <span className="text-xs font-semibold text-teal-600 uppercase tracking-wider">
-                                            {image.category}
-                                        </span>
-                                        <h3 className="text-base font-bold text-slate-900 mt-1 group-hover:text-teal-600 transition-colors">
-                                            {image.title}
-                                        </h3>
-                                    </div>
+                                <img
+                                    src={image.src}
+                                    alt={`Lab Photograph ${image.id}`}
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
+                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+                                    <Maximize2 className="h-8 w-8 text-white opacity-0 group-hover:opacity-100 transition-opacity drop-shadow-md" />
                                 </div>
                             </div>
                         ))}
@@ -236,12 +213,9 @@ const Gallery = () => {
                         </button>
                         <img
                             src={lightboxImage.src}
-                            alt={lightboxImage.title}
-                            className="max-w-full max-h-[75vh] object-contain rounded-lg shadow-2xl"
+                            alt="Lab Photograph Fullscreen"
+                            className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
                         />
-                        <div className="mt-4 text-center text-white">
-                            <h3 className="text-xl font-bold">{lightboxImage.title}</h3>
-                        </div>
                     </div>
                 </div>
             )}
