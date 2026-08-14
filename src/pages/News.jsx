@@ -54,8 +54,7 @@ const News = () => {
                                             {item.summary}
                                         </p>
                                     </div>
-                                    <div className="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
-                                        <span className="text-xs text-slate-500">By {item.author}</span>
+                                    <div className="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-end">
                                         <button
                                             onClick={() => setActiveModalItem(item)}
                                             className="inline-flex items-center text-sm font-semibold text-teal-600 hover:text-teal-700 transition-colors"
@@ -128,8 +127,7 @@ const News = () => {
                         <div className="prose prose-slate max-w-none text-slate-700 text-sm leading-relaxed space-y-4 mb-6">
                             <p>{activeModalItem.content}</p>
                         </div>
-                        <div className="flex justify-between items-center border-t border-slate-100 pt-4">
-                            <span className="text-xs text-slate-500">By {activeModalItem.author}</span>
+                        <div className="flex justify-end items-center border-t border-slate-100 pt-4">
                             <button
                                 onClick={() => setActiveModalItem(null)}
                                 className="px-5 py-2 bg-slate-900 text-white rounded-lg text-sm font-medium hover:bg-slate-800 transition-colors"
