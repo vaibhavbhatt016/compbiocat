@@ -54,11 +54,11 @@ const XIcon = ({ size = 16, className = "" }) => (
 const teamMembers = [
     { name: "Vaibhav Bhatt", firstName: "vaibhav", role: "Ph.D. Scholar", email: "vb147@snu.edu.in", x: "https://x.com/vaibhavbhatt314", linkedin: "https://www.linkedin.com/in/vaibhav-bhatt-70a73936/" },
     { name: "Dinesh Singh", firstName: "dinesh", role: "Ph.D. Scholar", email: "ds829@snu.edu.in", x: "https://x.com/Dineshsingh6666", linkedin: "https://www.linkedin.com/in/dinesh-singh-661945243/" },
-    { name: "Epari Sai Santosh Kumar", firstName: "epari", role: "Ph.D. Scholar", email: "ek923@snu.edu.in", x: "#", linkedin: "#" },
-    { name: "Subhasri Dan", firstName: "subhasri", image: subhasriImage, role: "Ph.D. Scholar", email: "sd433@snu.edu.in", x: "#", linkedin: "#" },
-    { name: "Insan Khan", firstName: "insan-khan", image: insanKhanImage, role: "Postgraduate Student", email: "ik187@snu.edu.in", x: "#", linkedin: "#" },
-    { name: "Harsh Agrawal", firstName: "harsh", role: "Undergraduate Student", email: "ha722@snu.edu.in", x: "#", linkedin: "#" },
-    { name: "Ashar Hussain", firstName: "ashar", role: "Undergraduate Student", email: "ah992@snu.edu.in", x: "#", linkedin: "#" },
+    { name: "Epari Sai Santosh Kumar", firstName: "epari", role: "Ph.D. Scholar", email: "ek923@snu.edu.in", x: "https://x.com/ESaiSantosh", linkedin: "https://www.linkedin.com/in/epari-sai-santosh-kumar-8a51a02b4/" },
+    { name: "Subhasri Dan", firstName: "subhasri", image: subhasriImage, role: "Ph.D. Scholar", email: "sd433@snu.edu.in" },
+    { name: "Insan Khan", firstName: "insan-khan", image: insanKhanImage, role: "Postgraduate Student", email: "ik187@snu.edu.in" },
+    { name: "Harsh Agrawal", firstName: "harsh", role: "Undergraduate Student", email: "ha722@snu.edu.in", linkedin: "https://www.linkedin.com/in/harsh-ki/" },
+    { name: "Ashar Hussain", firstName: "ashar", role: "Undergraduate Student", email: "ah992@snu.edu.in", linkedin: "https://www.linkedin.com/in/ashar-hussain-b5aa612b2/" },
 ];
 
 const alumni = [
@@ -201,24 +201,42 @@ const Team = () => {
                                         <span>{member.email}</span>
                                     </div>
                                     <div className="flex items-center gap-2 mt-1">
-                                        <a
-                                            href={member.x || "#"}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="p-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 hover:text-black transition-colors"
-                                            title={`${member.name} on X (formerly Twitter)`}
-                                        >
-                                            <XIcon size={14} />
-                                        </a>
-                                        <a
-                                            href={member.linkedin || "#"}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="p-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 hover:text-blue-600 transition-colors"
-                                            title={`${member.name} on LinkedIn`}
-                                        >
-                                            <Linkedin size={14} />
-                                        </a>
+                                        {member.x ? (
+                                            <a
+                                                href={member.x}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="p-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 hover:text-black transition-colors"
+                                                title={`${member.name} on X (formerly Twitter)`}
+                                            >
+                                                <XIcon size={14} />
+                                            </a>
+                                        ) : (
+                                            <span
+                                                className="p-1.5 rounded-full bg-slate-50 text-slate-400 cursor-default"
+                                                title="X profile not available"
+                                            >
+                                                <XIcon size={14} />
+                                            </span>
+                                        )}
+                                        {member.linkedin ? (
+                                            <a
+                                                href={member.linkedin}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="p-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 hover:text-blue-600 transition-colors"
+                                                title={`${member.name} on LinkedIn`}
+                                            >
+                                                <Linkedin size={14} />
+                                            </a>
+                                        ) : (
+                                            <span
+                                                className="p-1.5 rounded-full bg-slate-50 text-slate-400 cursor-default"
+                                                title="LinkedIn profile not available"
+                                            >
+                                                <Linkedin size={14} />
+                                            </span>
+                                        )}
                                     </div>
                                 </div>
                             </div>

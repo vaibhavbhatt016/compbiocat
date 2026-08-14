@@ -452,10 +452,36 @@ const publicationsData = [
     }
 ];
 
+const ScholarIcon = ({ size = 18, className = "" }) => (
+    <svg
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        className={className}
+        aria-label="Google Scholar"
+    >
+        <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5 12 0z" />
+    </svg>
+);
+
+const SCHOLAR_URL = "https://scholar.google.com/citations?user=K7T8ggkAAAAJ&hl=en";
+
 const Publications = () => {
     return (
         <div className="space-y-8">
-            <h1 className="text-3xl font-bold text-science-blue border-b border-slate-200 pb-4">Selected Publications</h1>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-b border-slate-200 pb-4">
+                <h1 className="text-3xl font-bold text-science-blue">Selected Publications</h1>
+                <a
+                    href={SCHOLAR_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-teal-50 hover:bg-teal-100 text-teal-800 border border-teal-200 rounded-lg text-sm font-semibold transition-all hover:shadow-xs group w-fit"
+                >
+                    <span>For more publications, click here</span>
+                    <ScholarIcon size={18} className="text-teal-700 group-hover:scale-110 transition-transform" />
+                </a>
+            </div>
 
             <div className="space-y-8">
                 {publicationsData.map((group) => (

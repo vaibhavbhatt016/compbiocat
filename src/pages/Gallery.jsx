@@ -65,15 +65,11 @@ const Gallery = () => {
                 <div className="bg-slate-900 text-white rounded-2xl p-8 md:p-12 shadow-xl border border-slate-800 relative overflow-hidden mb-10">
                     <div className="absolute top-0 right-0 -mt-8 -mr-8 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
                     <div className="relative z-10 max-w-3xl">
-                        <div className="inline-flex items-center space-x-2 bg-slate-800/80 border border-slate-700 rounded-full px-4 py-1.5 mb-6 text-sm text-teal-400">
-                            <Sparkles className="h-4 w-4" />
-                            <span>Photo Gallery & Life at Lab</span>
-                        </div>
                         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
                             Lab Gallery
                         </h1>
                         <p className="text-lg text-slate-300 leading-relaxed">
-                            A glimpse into our lab life, annual group photos, conference presentations, research discussions, and celebratory milestones at Shiv Nadar Institution of Eminence.
+                            A glimpse into our lab life
                         </p>
                     </div>
                 </div>

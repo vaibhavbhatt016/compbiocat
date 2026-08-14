@@ -1,4 +1,5 @@
-import { Mail, MapPin, Github } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Mail, MapPin, MessageSquare } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -31,10 +32,9 @@ const Footer = () => {
                     <div>
                         <h3 className="text-lg font-semibold text-white mb-4">Connect</h3>
                         <div className="flex space-x-4">
-                            <a href="#" className="hover:text-science-teal transition-colors">
-                                <Github className="h-6 w-6" />
-                            </a>
-                            {/* Add more social icons as needed */}
+                            <Link to="/contact" className="hover:text-science-teal transition-colors" title="Contact Us">
+                                <Mail className="h-6 w-6" />
+                            </Link>
                         </div>
                     </div>
                 </div>
