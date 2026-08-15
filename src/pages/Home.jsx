@@ -42,7 +42,7 @@ const Home = () => {
             {/* Hero Section */}
             <section className="bg-slate-900 py-12 md:py-20 shadow-xl">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col lg:flex-row items-center lg:items-stretch gap-10 lg:gap-14">
+                    <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
                         {/* Text Content - Bio */}
                         <div className="w-full lg:w-3/5 space-y-5 text-left flex flex-col justify-center">
                             <h1 className="text-2xl md:text-3xl font-extrabold text-teal-400 tracking-tight leading-tight">
@@ -68,9 +68,9 @@ const Home = () => {
                         </div>
 
                         {/* Right Side: Circular Logo and Carousel */}
-                        <div className="w-full lg:w-2/5 flex flex-col items-center justify-between gap-6 py-2">
+                        <div className="w-full lg:w-2/5 flex flex-col items-center justify-center gap-5 py-2 my-auto">
                             {/* Circular Lab Logo */}
-                            <div className="w-60 h-60 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full overflow-hidden shadow-2xl border-4 border-slate-700 bg-white p-3 flex items-center justify-center flex-shrink-0 hover:scale-105 transition-transform duration-500">
+                            <div className="w-56 h-56 sm:w-60 sm:h-60 md:w-64 md:h-64 rounded-full overflow-hidden shadow-2xl border-4 border-slate-700 bg-white p-3 flex items-center justify-center flex-shrink-0 hover:scale-105 transition-transform duration-500">
                                 <img
                                     src={labLogo}
                                     alt="Computational Biocatalysis Lab Logo"
@@ -79,7 +79,7 @@ const Home = () => {
                             </div>
 
                             {/* Video / Media Carousel */}
-                            <div className="w-full relative h-60 sm:h-64 md:h-72 rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-700 bg-slate-950 flex items-center justify-center">
+                            <div className="w-full relative h-56 sm:h-60 md:h-64 rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-700 bg-slate-950 flex items-center justify-center">
                                 {homeMedia.map((item, index) => (
                                     <div
                                         key={index}
