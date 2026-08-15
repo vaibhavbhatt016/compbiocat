@@ -3,20 +3,8 @@ export const newsCategories = ['All', 'Grants', 'Publications', 'Conferences', '
 export const newsData = [
   {
     id: 1,
-    title: 'Dr. Dubey appointed as Early Career Editorial Board Member of Natural Sciences, Wiley Publications',
-    date: '23 June, 2026',
-    category: 'Awards',
-    featured: true,
-    summary: "Dr. Dubey has been appointed as an Early Career Editorial Board Member of Natural Sciences, Wiley's flagship multi- and interdisciplinary Open Science journal (IF 4.1).",
-    content: "Natural Sciences is Wiley's flagship multi- and interdisciplinary Open Science journal with an Impact Factor of 4.1. The journal publishes top-tier research from biology, chemistry, physics, among their interfaces including engineering and biomedical research.",
-    tags: ['Editorial Board', 'Natural Sciences', 'Wiley Publications', 'Recognition'],
-    link: '/news',
-    author: 'Computational Biocatalysis Lab'
-  },
-  {
-    id: 2,
     title: 'Dr. Dubey Publishes 100th Research Article as 2026 ACS Rising Star Invited Contribution',
-    date: '2026',
+    date: '27 July, 2026',
     category: 'Awards',
     featured: true,
     summary: 'Celebrating a milestone: Dr. Kshatresh Dutta Dubey publishes his 100th research article—an invited contribution honoring his selection as the 2026 ACS Rising Star in Biological, Medicinal and Pharmaceutical Chemistry.',
@@ -26,9 +14,9 @@ export const newsData = [
     author: 'Computational Biocatalysis Lab'
   },
   {
-    id: 3,
+    id: 2,
     title: 'Vaibhav Publishes Comprehensive Review on Xenobiotic Detoxification Mechanisms',
-    date: '2026',
+    date: '27 July, 2026',
     category: 'Publications',
     featured: true,
     summary: 'Congratulations to Vaibhav on publishing a comprehensive review article elucidating molecular mechanisms in xenobiotic detoxification.',
@@ -38,15 +26,27 @@ export const newsData = [
     author: 'Computational Biocatalysis Lab'
   },
   {
-    id: 4,
+    id: 3,
     title: 'Epari Sai Santosh Kumar Begins 1-Month Research Visit to University of Melbourne via SPARC',
-    date: '2026',
+    date: '1 July, 2026',
     category: 'Lab Life',
     featured: true,
     summary: 'As part of the prestigious SPARC fellowship program, Epari Sai Santosh Kumar is visiting the University of Melbourne for collaborative research.',
     content: 'Lab member Epari Sai Santosh Kumar has embarked on a 1-month international research visit to the University of Melbourne under the Scheme for Promotion of Academic and Research Collaboration (SPARC) fellowship. This collaboration aims to foster joint computational research efforts and exchange expertise. We wish Santosh a highly productive and enriching experience in Australia!',
     tags: ['SPARC Fellowship', 'University of Melbourne', 'International Visit'],
     link: '/team',
+    author: 'Computational Biocatalysis Lab'
+  },
+  {
+    id: 4,
+    title: 'Dr. Dubey appointed as Early Career Editorial Board Member of Natural Sciences, Wiley Publications',
+    date: '23 June, 2026',
+    category: 'Awards',
+    featured: true,
+    summary: "Dr. Dubey has been appointed as an Early Career Editorial Board Member of Natural Sciences, Wiley's flagship multi- and interdisciplinary Open Science journal (IF 4.1).",
+    content: "Natural Sciences is Wiley's flagship multi- and interdisciplinary Open Science journal with an Impact Factor of 4.1. The journal publishes top-tier research from biology, chemistry, physics, among their interfaces including engineering and biomedical research.",
+    tags: ['Editorial Board', 'Natural Sciences', 'Wiley Publications', 'Recognition'],
+    link: '/news',
     author: 'Computational Biocatalysis Lab'
   },
   {
@@ -64,7 +64,7 @@ export const newsData = [
   {
     id: 6,
     title: 'Dr. Dubey Conferred "Research Excellence Award" at Shiv Nadar Institution of Eminence',
-    date: '2026',
+    date: '19 April, 2026',
     category: 'Awards',
     featured: true,
     summary: 'Recognizing outstanding scientific contributions, Dr. Dubey receives the School of Natural Sciences Research Excellence Award at the 2026 Annual Awards Ceremony.',
@@ -76,7 +76,7 @@ export const newsData = [
   {
     id: 7,
     title: 'Dr. Surajit Kalita Awarded Prestigious ANRF PMECRG in Computational Chemical Biology',
-    date: '2026',
+    date: '14 April, 2026',
     category: 'Awards',
     featured: true,
     summary: 'Heartiest congratulations to lab alumnus Dr. Surajit Kalita, Assistant Professor at Tezpur University, on receiving the Prime Minister Early Career Research Grant (PMECRG) from ANRF.',
