@@ -3,6 +3,18 @@ export const newsCategories = ['All', 'Grants', 'Publications', 'Conferences', '
 export const newsData = [
   {
     id: 1,
+    title: 'Dr. Dubey appointed as Early Career Editorial Board Member of Natural Sciences, Wiley Publications',
+    date: '23 June, 2026',
+    category: 'Awards',
+    featured: true,
+    summary: "Dr. Dubey has been appointed as an Early Career Editorial Board Member of Natural Sciences, Wiley's flagship multi- and interdisciplinary Open Science journal (IF 4.1).",
+    content: "Natural Sciences is Wiley's flagship multi- and interdisciplinary Open Science journal with an Impact Factor of 4.1. The journal publishes top-tier research from biology, chemistry, physics, among their interfaces including engineering and biomedical research.",
+    tags: ['Editorial Board', 'Natural Sciences', 'Wiley Publications', 'Recognition'],
+    link: '/news',
+    author: 'Computational Biocatalysis Lab'
+  },
+  {
+    id: 2,
     title: 'Dr. Dubey Publishes 100th Research Article as 2026 ACS Rising Star Invited Contribution',
     date: '2026',
     category: 'Awards',
@@ -14,7 +26,7 @@ export const newsData = [
     author: 'Computational Biocatalysis Lab'
   },
   {
-    id: 2,
+    id: 3,
     title: 'Vaibhav Publishes Comprehensive Review on Xenobiotic Detoxification Mechanisms',
     date: '2026',
     category: 'Publications',
@@ -26,7 +38,7 @@ export const newsData = [
     author: 'Computational Biocatalysis Lab'
   },
   {
-    id: 3,
+    id: 4,
     title: 'Epari Sai Santosh Kumar Begins 1-Month Research Visit to University of Melbourne via SPARC',
     date: '2026',
     category: 'Lab Life',
@@ -38,19 +50,19 @@ export const newsData = [
     author: 'Computational Biocatalysis Lab'
   },
   {
-    id: 4,
-    title: 'New Research Article Published in Organometallics by Dinesh and Vandana',
+    id: 5,
+    title: 'New Research Article Published in Organometallics by Vandana and Dinesh',
     date: '15 May, 2026',
     category: 'Publications',
     featured: true,
-    summary: 'Congratulations to Dinesh and Vandana on their latest research paper published in Organometallics on May 15, 2026.',
-    content: 'We are delighted to share that Dinesh and Vandana have published their latest research article in the prestigious ACS journal Organometallics (published May 15, 2026). Their work provides novel insights into organometallic reaction mechanisms and catalyst design. Warm congratulations to Dinesh, Vandana, and all co-authors on this achievement!',
+    summary: 'Congratulations to Vandana and Dinesh on their latest research paper published in Organometallics on May 15, 2026.',
+    content: 'We are delighted to share that Vandana and Dinesh have published their latest research article in the prestigious ACS journal Organometallics (published May 15, 2026). Their work provides novel insights into organometallic reaction mechanisms and catalyst design. Warm congratulations to Vandana, Dinesh, and all co-authors on this achievement!',
     tags: ['Organometallics', 'Publication', 'Chemistry'],
     link: '/publications',
     author: 'Computational Biocatalysis Lab'
   },
   {
-    id: 5,
+    id: 6,
     title: 'Dr. Dubey Conferred "Research Excellence Award" at Shiv Nadar Institution of Eminence',
     date: '2026',
     category: 'Awards',
@@ -62,7 +74,7 @@ export const newsData = [
     author: 'Computational Biocatalysis Lab'
   },
   {
-    id: 6,
+    id: 7,
     title: 'Dr. Surajit Kalita Awarded Prestigious ANRF PMECRG in Computational Chemical Biology',
     date: '2026',
     category: 'Awards',
@@ -74,7 +86,7 @@ export const newsData = [
     author: 'Computational Biocatalysis Lab'
   },
   {
-    id: 7,
+    id: 8,
     title: 'ACS Catalysis Article Unravels Differential Activity of Cytochrome P450 Isozymes',
     date: '2026',
     category: 'Publications',
@@ -83,6 +95,18 @@ export const newsData = [
     content: 'Our latest study published in ACS Catalysis investigates the subtle structural and dynamic factors governing the differential catalytic activity of two closely related Cytochrome P450 isozymes. Using multi-scale simulations, the paper highlights active-site conformational landscapes and catalytic selectivity. Explore the full study in the Publications section!',
     tags: ['ACS Catalysis', 'Cytochrome P450', 'Isozymes', 'QM/MM'],
     link: '/publications',
+    author: 'Computational Biocatalysis Lab'
+  },
+  {
+    id: 9,
+    title: 'Dr. Dubey awarded with the 2025 ACS Rising Star Award in Organic and Inorganic Chemistry',
+    date: '2025',
+    category: 'Awards',
+    featured: false,
+    summary: 'Dr. Dubey awarded with the 2025 ACS Rising Star Award in Organic and Inorganic Chemistry. Despite being a physicist by training, his continuous contribution to computational chemistry is reflective of the multi-faceted research conducted by his group.',
+    content: 'Dr. Dubey awarded with the 2025 ACS Rising Star Award in Organic and Inorganic Chemistry. Despite being a physicist by training, his continuous contribution to computational chemistry is reflective of the multi-faceted research conducted by his group. A proud moment for Computational Biocatalysis Lab.',
+    tags: ['ACS Award', 'Rising Star', 'Organic and Inorganic Chemistry', 'Awards'],
+    link: '/news',
     author: 'Computational Biocatalysis Lab'
   }
 ];
