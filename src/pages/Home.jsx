@@ -4,12 +4,24 @@ import { newsData } from '../data/newsData';
 import grpPhotoUpdated from '../assets/grp_photo_updated.jpg';
 import labLogo from '../assets/lab-logo.png';
 import reactionVideo from '../assets/reaction_10s.mp4';
+import cytochromeVideo from '../assets/cytochrome.mp4';
+import dnaVideo from '../assets/dna.mp4';
 
 const homeMedia = [
     {
         type: "video",
         src: reactionVideo,
         alt: "Enzymatic Reaction Dynamics Simulation"
+    },
+    {
+        type: "video",
+        src: cytochromeVideo,
+        alt: "Cytochrome Dynamics Simulation"
+    },
+    {
+        type: "video",
+        src: dnaVideo,
+        alt: "DNA Dynamics Simulation"
     }
 ];
 
@@ -20,7 +32,7 @@ const Home = () => {
         if (homeMedia.length <= 1) return;
         const interval = setInterval(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % homeMedia.length);
-        }, 6000);
+        }, 8000);
 
         return () => clearInterval(interval);
     }, []);
@@ -87,9 +99,6 @@ const Home = () => {
                                                 className="w-full h-full object-cover"
                                             />
                                         )}
-                                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white p-3 pt-8 text-center text-sm font-medium">
-                                            {item.alt}
-                                        </div>
                                     </div>
                                 ))}
 
