@@ -8,8 +8,6 @@ export const projects = [
         id: "reaction-dynamics-and-mechanism",
         title: "Reaction Dynamics and Mechanism",
         description: "We investigate the molecular pathways and dynamic processes underlying enzymatic reactions, with particular emphasis on understanding how enzymes control chemical reactivity at the atomic and electronic levels.",
-        image: enzCat1Img,
-        images: [enzCat1Img, enzymaticCatalysisImg],
         fullDescription: `
 # Reaction Dynamics and Mechanism
 
@@ -34,7 +32,8 @@ The objective is to establish the molecular principles that govern reaction path
         id: "enzymatic-catalysis",
         title: "Enzymatic Catalysis",
         description: "We investigate how enzymes accelerate, control, and direct chemical transformations through the precise organization of their active sites and surrounding molecular environment.",
-        image: enzymaticCatalysisImg,
+        image: enzCat1Img,
+        images: [enzCat1Img, enzymaticCatalysisImg],
         fullDescription: `
 # Enzymatic Catalysis
 
