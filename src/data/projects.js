@@ -5,6 +5,57 @@ import strBioImg from '../assets/str_bio1.png';
 
 export const projects = [
     {
+        id: "reaction-dynamics-and-mechanism",
+        title: "Reaction Dynamics and Mechanism",
+        description: "We investigate the molecular pathways and dynamic processes underlying enzymatic reactions, with particular emphasis on understanding how enzymes control chemical reactivity at the atomic and electronic levels.",
+        image: enzCat1Img,
+        images: [enzCat1Img, enzymaticCatalysisImg],
+        fullDescription: `
+# Reaction Dynamics and Mechanism
+
+We investigate the molecular pathways and dynamic processes underlying enzymatic reactions, with particular emphasis on understanding how enzymes control chemical reactivity at the atomic and electronic levels. Using quantum chemistry, QM/MM calculations, molecular dynamics, and free-energy methods, we characterize reaction intermediates, transition states, competing pathways, and the energetic landscape connecting them.
+
+Our research focuses on complex catalytic processes involving proton and electron transfer, hydrogen-atom transfer, metal–oxygen chemistry, spin-state changes, and reactive intermediates. By integrating structural dynamics with electronic-structure calculations, we examine how fluctuations in the protein environment, active-site architecture, electrostatics, and solvent organization influence reaction pathways and catalytic outcomes.
+
+The objective is to establish the molecular principles that govern reaction pathways and determine why particular chemical mechanisms are favoured within biological environments.
+
+**Core Themes:** Reaction pathways • Dynamic processes • QM/MM simulations • Transition states & intermediates • Proton & electron transfer • Hydrogen-atom transfer (HAT) • Metal–oxygen chemistry • Spin-state dynamics
+
+## Key Focus Areas
+
+- **Reaction Pathways & Transition States:** Characterizing transition states, reactive intermediates, and competing reaction pathways on free-energy surfaces.
+- **Charge & Radical Transfer:** Investigating proton transfer, electron transfer, and hydrogen-atom transfer (HAT) events in enzymatic mechanisms.
+- **Metalloenzyme & Spin Chemistry:** Deciphering metal–oxygen active species, open-shell intermediates, and spin-state energetics.
+- **Environmental Modulation:** Evaluating how protein fluctuations, active-site architecture, electrostatics, and solvent modulate chemical reactivity.
+        `
+    },
+
+    {
+        id: "enzymatic-catalysis",
+        title: "Enzymatic Catalysis",
+        description: "We investigate how enzymes accelerate, control, and direct chemical transformations through the precise organization of their active sites and surrounding molecular environment.",
+        image: enzymaticCatalysisImg,
+        fullDescription: `
+# Enzymatic Catalysis
+
+We investigate how enzymes accelerate, control, and direct chemical transformations through the precise organization of their active sites and surrounding molecular environment. Our research explores how catalytic residues, cofactors, substrates, solvent molecules, and the protein matrix work together to create the conditions required for efficient and selective chemistry.
+
+Using computational approaches spanning molecular simulations, quantum chemistry, and multiscale modelling, we examine the physical principles underlying substrate activation, catalytic residue function, cofactor reactivity, proton and electron management, and active-site organization. Particular emphasis is placed on understanding how protein architecture and dynamics couple to chemical reactivity and how changes in the catalytic environment can alter enzyme activity and specificity.
+
+Our goal is to uncover the fundamental principles by which enzymes achieve remarkable catalytic efficiency and selectivity, providing mechanistic insight that can ultimately guide the rational engineering of improved catalysts.
+
+**Core Themes:** Catalytic efficiency • Active-site organization • Substrate activation • Cofactor reactivity • Multiscale modelling • Structure–reactivity coupling • Enzyme specificity
+
+## Key Focus Areas
+
+- **Active-Site Organization & Preorganization:** Exploring how catalytic residues, cofactors, and solvent molecules assemble to achieve optimal catalysis.
+- **Substrate Activation & Cofactor Function:** Deciphering the physical mechanisms governing cofactor reactivity and substrate activation.
+- **Structure-Reactivity Coupling:** Understanding how protein dynamics and architecture modulate chemical rates and catalytic selectivity.
+- **Catalytic Optimization & Engineering Insights:** Establishing mechanistic principles that guide the rational design and engineering of improved enzymes.
+        `
+    },
+
+    {
         id: "computational-structure-biology",
         title: "Computational Structure Biology",
         description: "We investigate how protein structure, dynamics, and molecular interactions govern biological function through advanced simulations and computational biophysics.",
@@ -46,6 +97,7 @@ We investigate the role of electrostatic environments and local electric fields 
 - **Catalytic Efficiency & Selectivity:** Providing a fundamental physical basis for enzyme acceleration and reaction specificity.
         `
     },
+
     {
         id: "de-novo-enzyme-design",
         title: "De Novo Enzyme Design and Engineering",
@@ -63,27 +115,6 @@ We use computational principles of protein structure, energetics, and catalysis 
 - **Rational Protein Engineering:** Modifying enzyme backbones and active pockets for enhanced stability and activity.
 - **Substrate Specificity & Recognition:** Tailoring binding pockets for custom substrates, ligands, and target molecules.
 - **Mutational Analysis:** Identifying critical mutations that modulate catalytic efficiency, turnover, and structural stability.
-        `
-    },
-    {
-        id: "enzymatic-catalysis",
-        title: "Enzymatic Catalysis",
-        description: "We investigate how enzymes accelerate chemical reactions at the molecular and electronic levels through QM/MM calculations and quantum chemistry.",
-        image: enzCat1Img,
-        images: [enzCat1Img, enzymaticCatalysisImg],
-        fullDescription: `
-# Enzymatic Catalysis
-
-We investigate how enzymes accelerate chemical reactions at the molecular and electronic levels. Our work combines molecular dynamics, quantum chemistry, and QM/MM calculations to elucidate reaction mechanisms, identify intermediates and transition states, characterize proton/electron-transfer events, and determine the energetic factors governing catalytic pathways. Particular interest lies in metalloenzymes and complex redox chemistry, including cytochrome P450 systems, where spin states, metal–oxygen intermediates, substrate activation, hydrogen-atom transfer, and proton-coupled electron transfer can determine the course of catalysis.
-
-**Core Themes:** Reaction mechanisms • QM/MM simulations • Transition states • Reaction energetics • Proton/electron transfer • Metalloenzymes • Cytochrome P450 • Redox chemistry • Unspecified Peroxygenases
-
-## Key Focus Areas
-
-- **Reaction Mechanisms & Energetics:** Mapping energy landscapes and identifying reactive intermediates and transition states.
-- **Metalloenzymes & Redox Chemistry:** Unraveling catalytic cycles, spin state dynamics, and metal–oxygen intermediate states.
-- **Cytochrome P450 & Peroxygenases:** Deciphering hydrogen-atom transfer, substrate activation, and oxygenation pathways.
-- **Charge Transfer Processes:** Characterizing proton transfer, electron transfer, and proton-coupled electron transfer (PCET) events.
         `
     }
 ];
