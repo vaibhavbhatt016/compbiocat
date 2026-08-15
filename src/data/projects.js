@@ -7,24 +7,25 @@ export const projects = [
     {
         id: "reaction-dynamics-and-mechanism",
         title: "Reaction Dynamics and Mechanism",
-        description: "We investigate the molecular pathways and dynamic processes underlying enzymatic reactions, with particular emphasis on understanding how enzymes control chemical reactivity at the atomic and electronic levels.",
+        description: "We investigate the molecular pathways and dynamic processes underlying enzymatic reactions, with particular emphasis on Cytochrome P450s and metalloenzymes controlling chemical reactivity at the atomic and electronic levels.",
         fullDescription: `
 # Reaction Dynamics and Mechanism
 
-We investigate the molecular pathways and dynamic processes underlying enzymatic reactions, with particular emphasis on understanding how enzymes control chemical reactivity at the atomic and electronic levels. Using quantum chemistry, QM/MM calculations, molecular dynamics, and free-energy methods, we characterize reaction intermediates, transition states, competing pathways, and the energetic landscape connecting them.
+We investigate the molecular pathways and dynamic processes underlying enzymatic reactions, with particular emphasis on understanding how enzymes control chemical reactivity at the atomic and electronic levels. A primary focus of our research is on the Cytochrome P450 superfamily and related metalloenzymes, renowned for their remarkable ability to mediate selective C–H activation, oxygen transfer, and complex oxidative transformations. Using quantum chemistry, QM/MM calculations, molecular dynamics, and free-energy methods, we characterize reaction intermediates, transition states, competing pathways, and the complex energetic landscapes connecting them.
 
-Our research focuses on complex catalytic processes involving proton and electron transfer, hydrogen-atom transfer, metal–oxygen chemistry, spin-state changes, and reactive intermediates. By integrating structural dynamics with electronic-structure calculations, we examine how fluctuations in the protein environment, active-site architecture, electrostatics, and solvent organization influence reaction pathways and catalytic outcomes.
+Our research deciphers catalytic cycles involving Compound I and Compound II reactive intermediates, hydrogen-atom transfer (HAT), proton-coupled electron transfer (PCET), metal–oxygen chemistry, and multi-state spin reactivity. By integrating structural dynamics with electronic-structure calculations, we examine how fluctuations in the protein matrix, heme active-site architecture, electrostatics, axial ligation, and solvent organization influence reaction branching and catalytic outcomes.
 
-The objective is to establish the molecular principles that govern reaction pathways and determine why particular chemical mechanisms are favoured within biological environments.
+The objective is to establish the fundamental molecular principles that govern reaction pathways in Cytochrome P450s and other enzymes, determining why particular chemical mechanisms are favoured within biological environments and providing mechanistic insight for biocatalyst engineering.
 
-**Core Themes:** Reaction pathways • Dynamic processes • QM/MM simulations • Transition states & intermediates • Proton & electron transfer • Hydrogen-atom transfer (HAT) • Metal–oxygen chemistry • Spin-state dynamics
+**Core Themes:** Cytochrome P450 mechanisms • Reaction pathways • QM/MM simulations • Transition states & intermediates • Compound I / Compound II • Hydrogen-atom transfer (HAT) • Spin-state dynamics • Proton-coupled electron transfer (PCET)
 
 ## Key Focus Areas
 
-- **Reaction Pathways & Transition States:** Characterizing transition states, reactive intermediates, and competing reaction pathways on free-energy surfaces.
-- **Charge & Radical Transfer:** Investigating proton transfer, electron transfer, and hydrogen-atom transfer (HAT) events in enzymatic mechanisms.
-- **Metalloenzyme & Spin Chemistry:** Deciphering metal–oxygen active species, open-shell intermediates, and spin-state energetics.
-- **Environmental Modulation:** Evaluating how protein fluctuations, active-site architecture, electrostatics, and solvent modulate chemical reactivity.
+- **Cytochrome P450 Catalytic Cycles:** Deciphering oxygen activation, reactive Compound I/II intermediates, and multi-state reactivity across heme systems.
+- **Reaction Pathways & Transition States:** Characterizing transition states, reactive intermediates, and competing reaction pathways on free-energy landscapes.
+- **C–H Activation & Radical Chemistry:** Investigating hydrogen-atom transfer (HAT), radical rebound, and proton-coupled electron transfer (PCET) events.
+- **Spin-State & Electronic Dynamics:** Unraveling high-spin vs. low-spin state energetics, open-shell intermediates, and electronic modulation by axial ligands.
+- **Active-Site & Environmental Modulation:** Evaluating how protein fluctuations, active-site electrostatics, and solvent modulate reaction pathways and selectivity.
         `
     },
 
