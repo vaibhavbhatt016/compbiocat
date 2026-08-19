@@ -58,7 +58,6 @@ const teamMembers = [
     { name: "Subhasri Dan", firstName: "subhasri", image: subhasriImage, role: "Ph.D. Scholar", email: "sd433@snu.edu.in" },
     { name: "Insan Khan", firstName: "insan-khan", image: insanKhanImage, role: "Postgraduate Student", email: "ik187@snu.edu.in" },
     { name: "Harsh Agrawal", firstName: "harsh", role: "Undergraduate Student", email: "ha722@snu.edu.in", linkedin: "https://www.linkedin.com/in/harsh-ki/" },
-    { name: "Ashar Hussain", firstName: "ashar", role: "Undergraduate Student", email: "ah992@snu.edu.in", linkedin: "https://www.linkedin.com/in/ashar-hussain-b5aa612b2/" },
 ];
 
 const alumni = [
@@ -102,6 +101,10 @@ const alumni = [
         firstName: "ria-singh",
         position: "MSc in Chemistry at Delhi Technological University, New Delhi, India.",
         imagePosition: "object-top"
+    },
+    {
+        name: "Ashar Hussain",
+        firstName: "ashar"
     },
 ];
 

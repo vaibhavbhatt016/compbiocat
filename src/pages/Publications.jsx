@@ -720,7 +720,7 @@ const Publications = () => {
                                 </a>
                             </h3>
                             <p className="text-slate-600 text-sm mt-1">
-                                {pub.authors} (<strong className="font-bold text-slate-900">{pub.year}</strong>), <strong className="font-bold text-slate-900">{pub.journal}</strong>.
+                                {pub.authors} ({pub.year}), <strong className="font-bold text-slate-900">{pub.journal}</strong>.
                             </p>
                             <div className="mt-3 flex gap-2">
                                 <a
