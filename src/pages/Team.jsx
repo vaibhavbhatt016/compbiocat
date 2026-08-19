@@ -104,7 +104,8 @@ const alumni = [
     },
     {
         name: "Ashar Hussain",
-        firstName: "ashar"
+        firstName: "ashar",
+        position: "Undergraduate Student"
     },
 ];
 
