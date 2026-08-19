@@ -1,3 +1,5 @@
+import { keyPublicationsData } from '../data/keyPublicationsData';
+
 const publicationsData = [
     {
         "year": 2026,
@@ -469,9 +471,9 @@ const SCHOLAR_URL = "https://scholar.google.com/citations?user=K7T8ggkAAAAJ&hl=e
 
 const Publications = () => {
     return (
-        <div className="space-y-8">
+        <div className="space-y-12">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-b border-slate-200 pb-4">
-                <h1 className="text-3xl font-bold text-science-blue">Selected Publications</h1>
+                <h1 className="text-3xl font-bold text-science-blue">Publications</h1>
                 <a
                     href={SCHOLAR_URL}
                     target="_blank"
@@ -483,47 +485,102 @@ const Publications = () => {
                 </a>
             </div>
 
-            <div className="space-y-8">
-                {publicationsData.map((group) => (
-                    <section key={group.year}>
-                        <h2 className="text-2xl font-bold text-slate-400 mb-4">{group.year}</h2>
-                        <div className="space-y-4">
-                            {group.publications.map((pub, index) => (
-                                <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                                    <h3 className="text-slate-900 font-semibold text-lg hover:text-science-blue transition-colors">
-                                        <a href={pub.url || (pub.doi ? `https://doi.org/${pub.doi}` : '#')} target="_blank" rel="noopener noreferrer">
-                                            "{pub.title}"
-                                        </a>
-                                    </h3>
-                                    <p className="text-slate-600 text-sm mt-1">
-                                        {pub.authors} ({pub.year}), <strong className="font-bold text-slate-800">{pub.journal}</strong>.
-                                    </p>
-                                    <div className="mt-3 flex gap-2">
-                                        <a
-                                            href={pub.url || (pub.doi ? `https://doi.org/${pub.doi}` : '#')}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1 rounded-full transition-colors inline-block font-medium"
-                                        >
-                                            DOI
-                                        </a>
-                                        {pub.pdfUrl && (
+            {/* Key Publications Section */}
+            <section className="space-y-6">
+                <div className="border-b border-slate-200 pb-3">
+                    <h2 className="text-2xl font-bold text-science-blue flex items-center">
+                        <span className="bg-science-teal w-2 h-7 mr-3 rounded-sm"></span>
+                        Key Publications
+                    </h2>
+                </div>
+
+                <div className="space-y-4">
+                    {keyPublicationsData.map((pub, index) => (
+                        <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                            <h3 className="text-slate-900 font-semibold text-lg hover:text-science-blue transition-colors">
+                                <a href={pub.url || (pub.doi ? `https://doi.org/${pub.doi}` : '#')} target="_blank" rel="noopener noreferrer">
+                                    "{pub.title}"
+                                </a>
+                            </h3>
+                            <p className="text-slate-600 text-sm mt-1">
+                                {pub.authors} (<strong className="font-bold text-slate-900">{pub.year}</strong>), <strong className="font-bold text-slate-900">{pub.journal}</strong>.
+                            </p>
+                            <div className="mt-3 flex gap-2">
+                                <a
+                                    href={pub.url || (pub.doi ? `https://doi.org/${pub.doi}` : '#')}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1 rounded-full transition-colors inline-block font-medium"
+                                >
+                                    DOI
+                                </a>
+                                {pub.pdfUrl && (
+                                    <a
+                                        href={pub.pdfUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1 rounded-full transition-colors inline-block font-medium"
+                                    >
+                                        PDF
+                                    </a>
+                                )}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            {/* Selected Publications Section */}
+            <section className="space-y-8">
+                <div className="border-b border-slate-200 pb-3">
+                    <h2 className="text-2xl font-bold text-science-blue flex items-center">
+                        <span className="bg-science-teal w-2 h-7 mr-3 rounded-sm"></span>
+                        Selected Publications
+                    </h2>
+                </div>
+
+                <div className="space-y-8">
+                    {publicationsData.map((group) => (
+                        <section key={group.year}>
+                            <h3 className="text-2xl font-bold text-slate-400 mb-4">{group.year}</h3>
+                            <div className="space-y-4">
+                                {group.publications.map((pub, index) => (
+                                    <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                                        <h4 className="text-slate-900 font-semibold text-lg hover:text-science-blue transition-colors">
+                                            <a href={pub.url || (pub.doi ? `https://doi.org/${pub.doi}` : '#')} target="_blank" rel="noopener noreferrer">
+                                                "{pub.title}"
+                                            </a>
+                                        </h4>
+                                        <p className="text-slate-600 text-sm mt-1">
+                                            {pub.authors} (<strong className="font-bold text-slate-900">{pub.year}</strong>), <strong className="font-bold text-slate-900">{pub.journal}</strong>.
+                                        </p>
+                                        <div className="mt-3 flex gap-2">
                                             <a
-                                                href={pub.pdfUrl}
+                                                href={pub.url || (pub.doi ? `https://doi.org/${pub.doi}` : '#')}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1 rounded-full transition-colors inline-block font-medium"
                                             >
-                                                PDF
+                                                DOI
                                             </a>
-                                        )}
+                                            {pub.pdfUrl && (
+                                                <a
+                                                    href={pub.pdfUrl}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1 rounded-full transition-colors inline-block font-medium"
+                                                >
+                                                    PDF
+                                                </a>
+                                            )}
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
-                        </div>
-                    </section>
-                ))}
-            </div>
+                                ))}
+                            </div>
+                        </section>
+                    ))}
+                </div>
+            </section>
         </div>
     );
 };
