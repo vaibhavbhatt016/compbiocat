@@ -25,9 +25,9 @@ const Research = () => {
                     <Link
                         to={`/research/${project.id}`}
                         key={project.id}
-                        className="group block bg-white rounded-lg shadow-sm border border-slate-100 overflow-hidden hover:shadow-md transition-all cursor-pointer"
+                        className="group flex flex-col bg-white rounded-lg shadow-sm border border-slate-100 overflow-hidden hover:shadow-md transition-all cursor-pointer"
                     >
-                        <div className="h-52 bg-white overflow-hidden relative flex items-center justify-center border-b border-slate-100">
+                        <div className="h-52 bg-white overflow-hidden relative flex items-center justify-center border-b border-slate-100 flex-shrink-0">
                             {project.images && project.images.length > 1 ? (
                                 <div className="flex h-full w-full items-center justify-center gap-2 p-2 bg-white">
                                     {project.images.map((img, idx) => (
@@ -54,13 +54,23 @@ const Research = () => {
                                 </div>
                             )}
                         </div>
-                        <div className="p-6">
-                            <h3 className="text-xl font-bold text-science-blue mb-2 group-hover:text-science-teal transition-colors">
-                                {project.title}
-                            </h3>
-                            <p className="text-slate-600">
-                                {project.description}
-                            </p>
+                        <div className="p-6 flex flex-col flex-1 justify-between">
+                            <div>
+                                <h3 className="text-xl font-bold text-science-blue mb-2 group-hover:text-science-teal transition-colors">
+                                    {project.title}
+                                </h3>
+                                <p className="text-slate-600 text-sm md:text-base leading-relaxed">
+                                    {project.description}
+                                </p>
+                            </div>
+                            <div className="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between">
+                                <span className="inline-flex items-center gap-2 px-3.5 py-1.5 text-xs md:text-sm font-semibold text-teal-700 bg-teal-50 group-hover:bg-teal-600 group-hover:text-white rounded-lg transition-all duration-200">
+                                    Read More
+                                    <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </span>
+                            </div>
                         </div>
                     </Link>
                 ))}
