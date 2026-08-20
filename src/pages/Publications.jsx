@@ -20,8 +20,8 @@ const keyPublicationsData = [
         authors: "Shai Daube-Ben Ami, Lilianna Fuhrman Javitt, Shakir Ali Siddiqui, Hagai Cohen, David Ehre, Kshatresh Dutta Dubey, Meir Lahav, Igor Lubomirsky, Sason Shaik",
         journal: "Journal of the American Chemical Society",
         year: 2025,
-        doi: "10.1021/jacs.4c14327",
-        url: "https://doi.org/10.1021/jacs.4c14327"
+        doi: "10.1021/jacs.5c14056",
+        url: "https://doi.org/10.1021/jacs.5c14056"
     },
     {
         title: "Unusually Stable Synthetic Diheme Bis-Fe(IV)oxo: An Intermediate in Diheme Enzymes MauG and BthA",
@@ -36,24 +36,24 @@ const keyPublicationsData = [
         authors: "Shakir Ali Siddiqui, Sason Shaik, Kshatresh Dutta Dubey",
         journal: "ACS Catalysis",
         year: 2024,
-        doi: "10.1021/acscatal.4c03837",
-        url: "https://doi.org/10.1021/acscatal.4c03837"
+        doi: "10.1021/acscatal.4c05363",
+        url: "https://doi.org/10.1021/acscatal.4c05363"
     },
     {
         title: "On the Engineering of Reductase-Based-Monooxygenase Activity in CYP450 Peroxygenases",
         authors: "Sachin Yadav, Sason Shaik, Kshatresh Dutta Dubey",
         journal: "Chemical Science",
         year: 2024,
-        doi: "10.1039/D3SC06429H",
-        url: "https://doi.org/10.1039/D3SC06429H"
+        doi: "10.1039/d3sc06538c",
+        url: "https://doi.org/10.1039/d3sc06538c"
     },
     {
         title: "Rational Design of a Cyclohexanone Dehydrogenase for Enhanced α,β-Desaturation and Substrate Specificity",
         authors: "Warispreet Singh, Nathan L. Brown, Holly V. McCue, Samuel R. Marriott, R. Christopher Wilson, Joshua Perry, Kshatresh Dutta Dubey, et al.",
         journal: "Chemical Science",
         year: 2024,
-        doi: "10.1039/D3SC06037C",
-        url: "https://doi.org/10.1039/D3SC06037C"
+        doi: "10.1039/d3sc04009g",
+        url: "https://doi.org/10.1039/d3sc04009g"
     },
     {
         title: "Nanomachines in Living Matters: The Soft-Robot Cytochrome P450",
@@ -68,8 +68,8 @@ const keyPublicationsData = [
         authors: "Lilianna Fuhrman Javitt, Surajit Kalita, Kshatresh Dutta Dubey, David Ehre, Sason Shaik, Meir Lahav, Igor Lubomirsky",
         journal: "Journal of the American Chemical Society",
         year: 2023,
-        doi: "10.1021/jacs.3c05988",
-        url: "https://doi.org/10.1021/jacs.3c05988"
+        doi: "10.1021/jacs.3c05004",
+        url: "https://doi.org/10.1021/jacs.3c05004"
     },
     {
         title: "Computationally Guided Bioengineering of the Active Site, Substrate Access Pathway, and Water Channels of Thermostable Cytochrome P450, CYP175A1, for Catalyzing the Alkane Hydroxylation Reaction",
@@ -116,24 +116,24 @@ const keyPublicationsData = [
         authors: "Surajit Kalita, Sason Shaik, Kshatresh Dutta Dubey",
         journal: "Chemical Science",
         year: 2021,
-        doi: "10.1039/D1SC04533D",
-        url: "https://doi.org/10.1039/D1SC04533D"
+        doi: "10.1039/d1sc03489h",
+        url: "https://doi.org/10.1039/d1sc03489h"
     },
     {
         title: "O-/N-/S-Specificity in Glycosyltransferase Catalysis: From Mechanistic Understanding to Engineering",
         authors: "David Tézé, Jordi Coines, Frederik Fredslund, Kshatresh Dutta Dubey, Gabriel N. Bidart, Paul D. Adams, et al.",
         journal: "ACS Catalysis",
         year: 2021,
-        doi: "10.1021/acscatal.0c04712",
-        url: "https://doi.org/10.1021/acscatal.0c04712"
+        doi: "10.1021/acscatal.0c04171",
+        url: "https://doi.org/10.1021/acscatal.0c04171"
     },
     {
         title: "Solvent Reorganization and Rate Regulation of a Menshutkin Reaction by Oriented External Electric Fields Are Revealed by Combination of MD and QM/MM Calculations",
         authors: "Kshatresh Dutta Dubey, Thijs Stuyver, Surajit Kalita, Sason Shaik",
         journal: "Journal of the American Chemical Society",
         year: 2020,
-        doi: "10.1021/jacs.0c03496",
-        url: "https://doi.org/10.1021/jacs.0c03496"
+        doi: "10.1021/jacs.9b13029",
+        url: "https://doi.org/10.1021/jacs.9b13029"
     },
     {
         title: "A Paradigm Shift in the Catalytic Cycle of P450: The Preparatory Choreography during O₂ Binding and Origins of the Necessity for Two Protonation Pathways",
@@ -156,16 +156,16 @@ const keyPublicationsData = [
         authors: "Kshatresh Dutta Dubey, Sason Shaik",
         journal: "Accounts of Chemical Research",
         year: 2019,
-        doi: "10.1021/acs.accounts.8b00566",
-        url: "https://doi.org/10.1021/acs.accounts.8b00566"
+        doi: "10.1021/acs.accounts.8b00467",
+        url: "https://doi.org/10.1021/acs.accounts.8b00467"
     },
     {
         title: "Choreography of the Reductase and P450 BM3 Domains Toward Electron Transfer Is Instigated by the Substrate",
         authors: "Kshatresh Dutta Dubey, Sason Shaik",
         journal: "Journal of the American Chemical Society",
         year: 2018,
-        doi: "10.1021/jacs.7b11545",
-        url: "https://doi.org/10.1021/jacs.7b11545"
+        doi: "10.1021/jacs.7b10072",
+        url: "https://doi.org/10.1021/jacs.7b10072"
     },
     {
         title: "A Redox-Mediated Kemp Eliminase",
@@ -180,24 +180,24 @@ const keyPublicationsData = [
         authors: "Kshatresh Dutta Dubey, Binju Wang, Manu Vajpai, Sason Shaik",
         journal: "Chemical Science",
         year: 2017,
-        doi: "10.1039/C7SC01229B",
-        url: "https://doi.org/10.1039/C7SC01229B"
+        doi: "10.1039/c7sc01932g",
+        url: "https://doi.org/10.1039/c7sc01932g"
     },
     {
         title: "How Do Enzymes Utilize Reactive OH Radicals? Lessons from Nonheme HppE and Fenton Systems",
         authors: "Binju Wang, Jinyun Lu, Kshatresh Dutta Dubey, Guohui Dong, Wenzhen Lai, Sason Shaik",
         journal: "Journal of the American Chemical Society",
         year: 2016,
-        doi: "10.1021/jacs.6b04809",
-        url: "https://doi.org/10.1021/jacs.6b04809"
+        doi: "10.1021/jacs.6b03555",
+        url: "https://doi.org/10.1021/jacs.6b03555"
     },
     {
         title: "Emergence of Function in P450-Proteins: A Combined Quantum Mechanical/Molecular Mechanical and Molecular Dynamics Study of the Reactive Species in the H₂O₂-Dependent Cytochrome P450BSβ",
         authors: "Rajeev Ramanan, Kshatresh Dutta Dubey, Binju Wang, Debasis Mandal, Sason Shaik",
         journal: "Journal of the American Chemical Society",
         year: 2016,
-        doi: "10.1021/jacs.6b01433",
-        url: "https://doi.org/10.1021/jacs.6b01433"
+        doi: "10.1021/jacs.6b01716",
+        url: "https://doi.org/10.1021/jacs.6b01716"
     },
     {
         title: "Molecular Dynamics and QM/MM Calculations Predict the Substrate-Induced Gating of Cytochrome P450 BM3 and the Regio- and Stereoselectivity of Fatty Acid Hydroxylation",
@@ -295,7 +295,8 @@ const publicationsData = [
                 "authors": "Ben Ami, S. D., Javitt, L. F., Siddiqui, S. A., Cohen, H., Ehre, D., Dubey, K. D., Lahav, M., & Lubomirsky, I.",
                 "journal": "Journal of the American Chemical Society",
                 "year": 2025,
-                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12703723/"
+                "doi": "10.1021/jacs.5c14056",
+                "url": "https://doi.org/10.1021/jacs.5c14056"
             },
             {
                 "title": "Oriented Electric Fields─ Universal Catalysts",
@@ -352,7 +353,7 @@ const publicationsData = [
                 "journal": "ACS Catalysis",
                 "year": 2024,
                 "doi": "10.1021/acscatal.4c05363",
-                "url": "https://pubs.acs.org/doi/abs/10.1021/acscatal.4c05363"
+                "url": "https://doi.org/10.1021/acscatal.4c05363"
             },
             {
                 "title": "Understanding the Functional Dynamics of the TokK Enzyme in Carbapenem Biosynthesis via MD Simulations and QM/MM Calculations",
@@ -415,8 +416,8 @@ const publicationsData = [
                 "authors": "Yadav, S., Shaik, S., & Dubey, K. D.",
                 "journal": "Chemical Science",
                 "year": 2024,
-                "doi": "10.1039/D3SC06538C",
-                "url": "https://pubs.rsc.org/sc/article-abstract/15/14/5174/828009"
+                "doi": "10.1039/d3sc06538c",
+                "url": "https://doi.org/10.1039/d3sc06538c"
             }
         ]
     },
@@ -483,7 +484,8 @@ const publicationsData = [
                 "authors": "Javitt, L. F., Kalita, S., Dubey, K. D., Ehre, D., Shaik, S., Lahav, M., & Lubomirsky, I.",
                 "journal": "Journal of the American Chemical Society",
                 "year": 2023,
-                "url": "https://pubs.acs.org/jacsat/article/145/34/18904/320294"
+                "doi": "10.1021/jacs.3c05004",
+                "url": "https://doi.org/10.1021/jacs.3c05004"
             },
             {
                 "title": "How can static and oscillating electric fields serve in decomposing Alzheimer’s and other senile plaques?",
@@ -644,8 +646,8 @@ const publicationsData = [
                 "authors": "Kalita, S., Shaik, S., & Dubey, K. D.",
                 "journal": "Chemical Science",
                 "year": 2021,
-                "doi": "10.1039/D1SC03489H",
-                "url": "https://pubs.rsc.org/sc/article-abstract/12/43/14507/746487"
+                "doi": "10.1039/d1sc03489h",
+                "url": "https://doi.org/10.1039/d1sc03489h"
             }
         ]
     },
@@ -665,7 +667,8 @@ const publicationsData = [
                 "authors": "Dubey, K. D., Stuyver, T., Kalita, S., & Shaik, S.",
                 "journal": "Journal of the American Chemical Society",
                 "year": 2020,
-                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7304904/"
+                "doi": "10.1021/jacs.9b13029",
+                "url": "https://doi.org/10.1021/jacs.9b13029"
             }
         ]
     }
