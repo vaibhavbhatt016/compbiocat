@@ -2,12 +2,15 @@ import electricFieldImg from '../assets/electric_field.png';
 import enzymaticCatalysisImg from '../assets/enzymatic_catalysis.png';
 import enzCat1Img from '../assets/enz_cat1.png';
 import strBioImg from '../assets/str_bio1.png';
+import reactionDynamicsImg from '../assets/reaction_dynamics.png';
+import deNovoImg from '../assets/de_novo.png';
 
 export const projects = [
     {
         id: "reaction-dynamics-and-mechanism",
         title: "Reaction Dynamics and Mechanism",
         description: "We investigate the molecular pathways and dynamic processes underlying enzymatic reactions, with particular emphasis on Cytochrome P450s and metalloenzymes controlling chemical reactivity at the atomic and electronic levels.",
+        image: reactionDynamicsImg,
         fullDescription: `
 # Reaction Dynamics and Mechanism
 
@@ -102,6 +105,7 @@ We investigate the role of electrostatic environments and local electric fields 
         id: "de-novo-enzyme-design",
         title: "De Novo Enzyme Design and Engineering",
         description: "We use computational principles of protein structure, energetics, and catalysis to design and engineer enzymes with tailored properties.",
+        image: deNovoImg,
         fullDescription: `
 # De Novo Enzyme Design and Engineering
 

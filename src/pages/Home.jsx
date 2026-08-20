@@ -6,6 +6,8 @@ import labLogo from '../assets/lab-logo.png';
 import reactionVideo from '../assets/reaction_10s.mp4';
 import cytochromeVideo from '../assets/cytochrome.mp4';
 import dnaVideo from '../assets/dna.mp4';
+import epoxidationVideo from '../assets/movie_EPOXIDATION.mp4';
+import carbeneTransferVideo from '../assets/movie_carbene-transfer.mp4';
 
 const homeMedia = [
     {
@@ -22,6 +24,16 @@ const homeMedia = [
         type: "video",
         src: dnaVideo,
         alt: "DNA Dynamics Simulation"
+    },
+    {
+        type: "video",
+        src: epoxidationVideo,
+        alt: "Epoxidation Simulation"
+    },
+    {
+        type: "video",
+        src: carbeneTransferVideo,
+        alt: "Carbene Transfer Simulation"
     }
 ];
 
